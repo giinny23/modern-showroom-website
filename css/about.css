@@ -1,0 +1,751 @@
+@font-face {
+    font-family: "Showroom Playfair";
+    src: url("fonts/playfair-display.ttf") format("truetype");
+    font-weight: 400 700;
+}
+
+@font-face {
+    font-family: "Showroom Manrope";
+    src: url("fonts/manrope.otf") format("opentype");
+    font-weight: 400 700;
+}
+
+@font-face {
+    font-family: "Showroom Ferrari";
+    src: url("fonts/FerroRosso.ttf") format("truetype");
+}
+
+.about-page {
+    --about-dark: #1e2726;
+    --about-cream: #efeee5;
+    --about-white: #ffffff;
+    --about-red: #8f0101;
+    --about-olive: #899184;
+    --about-stone: #c5c0b5;
+    --about-muted: #666b66;
+
+    margin: 0;
+    padding: 0;
+    background: var(--about-cream);
+    color: var(--about-dark);
+    font-family: "Showroom Manrope", Arial, sans-serif;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+}
+
+.about-page *,
+.about-page *::before,
+.about-page *::after {
+    box-sizing: border-box;
+}
+
+.about-page a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.about-page img {
+    display: block;
+    max-width: 100%;
+}
+
+.about-container {
+    width: min(1120px, 88%);
+    margin-inline: auto;
+}
+
+.about-page h1,
+.about-page h2,
+.about-page h3 {
+    font-family: "Showroom Playfair", Georgia, serif;
+    font-weight: 600;
+    line-height: 1.15;
+}
+
+/* Header */
+.about-header {
+    min-height: 76px;
+    padding: 14px 5.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    background: var(--about-dark);
+    color: var(--about-white);
+}
+
+.about-logo {
+    font-family: "Showroom Ferrari", "Showroom Playfair", serif;
+    font-size: 27px;
+    line-height: 1.2;
+    white-space: nowrap;
+}
+
+.about-navigation {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.about-navigation a {
+    position: relative;
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.82);
+    font-family: "Showroom Playfair", Georgia, serif;
+    font-size: 14px;
+    transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.about-navigation a:hover,
+.about-navigation a:focus-visible,
+.about-navigation a.active {
+    color: var(--about-white);
+}
+
+.about-navigation a:hover,
+.about-navigation a:focus-visible {
+    transform: translateY(-2px);
+}
+
+.about-navigation a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+    width: 100%;
+    height: 2px;
+    background: var(--about-red);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.about-navigation a:hover::after,
+.about-navigation a:focus-visible::after,
+.about-navigation a.active::after {
+    transform: scaleX(1);
+}
+
+/* Shared text and buttons */
+.about-eyebrow {
+    margin: 0 0 14px;
+    color: var(--about-olive);
+    font-family: "Showroom Manrope", Arial, sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 1.5;
+}
+
+.about-button {
+    min-height: 46px;
+    padding: 0 23px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Showroom Manrope", Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.35px;
+    transition: background 0.25s ease, transform 0.25s ease;
+}
+
+.about-button:hover {
+    transform: translateY(-2px);
+}
+
+.about-button-red {
+    background: var(--about-red);
+    color: var(--about-white) !important;
+}
+
+.about-button-red:hover {
+    background: #650000;
+}
+
+.about-button-light {
+    background: var(--about-cream);
+    color: var(--about-dark) !important;
+}
+
+.about-button-light:hover {
+    background: var(--about-white);
+}
+
+/* Hero */
+.about-hero {
+    min-height: 510px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: #111615;
+    color: var(--about-white);
+}
+
+.about-hero-image,
+.about-hero-overlay {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.about-hero-image {
+    object-fit: cover;
+    object-position: center 53%;
+}
+
+.about-hero-overlay {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.78) 0%, rgba(0, 0, 0, 0.42) 52%, rgba(0, 0, 0, 0.08) 100%);
+}
+
+.about-hero-content {
+    position: relative;
+    z-index: 1;
+    width: min(660px, 82%);
+    margin-left: 8%;
+    padding: 70px 0;
+}
+
+.about-hero-content .about-eyebrow {
+    color: #d0d2c8;
+}
+
+.about-hero-content h1 {
+    margin: 0 0 18px;
+    font-size: clamp(40px, 5.4vw, 68px);
+    letter-spacing: -1.5px;
+}
+
+.about-hero-content > p:not(.about-eyebrow) {
+    max-width: 460px;
+    margin: 0 0 27px;
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 14px;
+}
+
+.about-hero-caption {
+    position: absolute;
+    right: 5.5%;
+    bottom: 22px;
+    z-index: 1;
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 9px;
+    letter-spacing: 1.6px;
+}
+
+/* Who we are */
+.about-intro {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 9%;
+}
+
+.about-intro-heading h2 {
+    margin: 0;
+    font-size: clamp(42px, 5vw, 60px);
+}
+
+.about-heading-line {
+    display: block;
+    width: 54px;
+    height: 3px;
+    margin-top: 24px;
+    background: var(--about-red);
+}
+
+.about-intro-copy {
+    max-width: 650px;
+    padding-top: 7px;
+}
+
+.about-intro-copy p {
+    color: var(--about-muted);
+    font-size: 13px;
+}
+
+.about-intro-copy .about-lead {
+    margin: 0 0 17px;
+    color: var(--about-dark);
+    font-family: "Showroom Playfair", Georgia, serif;
+    font-size: clamp(22px, 2.5vw, 29px);
+    line-height: 1.45;
+}
+
+.about-text-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 15px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--about-red);
+    color: var(--about-dark);
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.about-text-link span {
+    color: var(--about-red);
+}
+
+/* Image and showroom approach */
+.about-experience {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 430px;
+    background: #e5e3d9;
+}
+
+.about-experience-image-wrap {
+    min-height: 430px;
+    position: relative;
+    overflow: hidden;
+    background: var(--about-dark);
+}
+
+.about-experience-image {
+    width: 100%;
+    height: 100%;
+    min-height: 430px;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.6s ease;
+}
+
+.about-experience-image-wrap:hover .about-experience-image {
+    transform: scale(1.035);
+}
+
+.about-image-label {
+    position: absolute;
+    left: 22px;
+    bottom: 20px;
+    padding: 8px 12px;
+    background: rgba(30, 39, 38, 0.88);
+    color: var(--about-white);
+    font-size: 9px;
+    letter-spacing: 1.3px;
+}
+
+.about-experience-copy {
+    align-self: center;
+    padding: 60px 10%;
+}
+
+.about-experience-copy h2 {
+    max-width: 430px;
+    margin: 0 0 15px;
+    font-size: clamp(32px, 3.7vw, 45px);
+}
+
+.about-experience-copy > p:not(.about-eyebrow) {
+    max-width: 480px;
+    color: var(--about-muted);
+    font-size: 13px;
+}
+
+.about-stat-row {
+    display: flex;
+    gap: 28px;
+    margin-top: 34px;
+    padding-top: 22px;
+    border-top: 1px solid var(--about-stone);
+}
+
+.about-stat-row div {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.about-stat-row strong {
+    color: var(--about-red);
+    font-family: "Showroom Playfair", Georgia, serif;
+    font-size: 23px;
+}
+
+.about-stat-row span {
+    color: var(--about-muted);
+    font-size: 10px;
+}
+
+/* Mission and vision */
+.about-purpose {
+    padding-top: 85px;
+    padding-bottom: 90px;
+}
+
+.about-section-heading {
+    margin-bottom: 30px;
+}
+
+.about-section-heading h2 {
+    margin: 0;
+    font-size: clamp(34px, 4vw, 46px);
+}
+
+.about-purpose-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
+}
+
+.about-purpose-card {
+    min-height: 230px;
+    padding: 32px;
+    background: var(--about-white);
+    border: 1px solid rgba(30, 39, 38, 0.07);
+}
+
+.about-card-number {
+    color: var(--about-red);
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.about-purpose-card h3 {
+    margin: 20px 0 12px;
+    font-size: 27px;
+}
+
+.about-purpose-card p {
+    max-width: 470px;
+    margin: 0;
+    color: var(--about-muted);
+    font-size: 12px;
+}
+
+.about-purpose-card-dark {
+    background: var(--about-dark);
+    color: var(--about-white);
+}
+
+.about-purpose-card-dark .about-card-number {
+    color: #c6cbbb;
+}
+
+.about-purpose-card-dark p {
+    color: rgba(255, 255, 255, 0.72);
+}
+
+/* Why explore with us */
+.about-values {
+    padding: 80px 0 90px;
+    background: #e7e5dc;
+}
+
+.about-values-heading {
+    text-align: center;
+}
+
+.about-values-heading > p:last-child {
+    margin: 12px 0 0;
+    color: var(--about-muted);
+    font-size: 12px;
+}
+
+.about-values-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+}
+
+.about-value-card {
+    min-height: 205px;
+    padding: 27px 25px;
+    background: var(--about-white);
+    border: 1px solid rgba(30, 39, 38, 0.06);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.about-value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 28px rgba(30, 39, 38, 0.09);
+}
+
+.about-value-icon {
+    color: var(--about-red);
+    font-size: 25px;
+}
+
+.about-value-card h3 {
+    margin: 16px 0 8px;
+    font-size: 20px;
+}
+
+.about-value-card p {
+    margin: 0;
+    color: var(--about-muted);
+    font-size: 11px;
+}
+
+/* Call to action */
+.about-cta {
+    padding: 54px 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    background: var(--about-olive);
+    color: var(--about-white);
+}
+
+.about-cta .about-eyebrow {
+    color: rgba(255, 255, 255, 0.78);
+}
+
+.about-cta h2 {
+    margin: 0 0 10px;
+    font-size: clamp(28px, 3.4vw, 40px);
+}
+
+.about-cta p:not(.about-eyebrow) {
+    margin: 0;
+    color: rgba(255, 255, 255, 0.86);
+    font-size: 12px;
+}
+
+.about-cta-actions {
+    display: flex;
+    align-items: center;
+    gap: 23px;
+    flex-wrap: wrap;
+}
+
+.about-cta-link {
+    color: var(--about-white);
+    font-size: 11px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+/* Footer — same information and dark visual style as team pages */
+.about-footer {
+    padding: 50px 6% 20px;
+    background: var(--about-dark);
+    color: #a0a8a5;
+    font-family: "Showroom Manrope", Arial, sans-serif;
+}
+
+.about-footer-container {
+    width: min(1120px, 100%);
+    margin: 0 auto;
+    padding-bottom: 34px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.about-footer-column h2 {
+    margin: 0 0 15px;
+    color: var(--about-white);
+    font-family: "Showroom Manrope", Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.about-footer-column ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.about-footer-column li,
+.about-footer-column p,
+.about-footer-column a {
+    margin: 0 0 9px;
+    color: #a0a8a5;
+    font-size: 10px;
+}
+
+.about-footer-column a:hover,
+.about-footer-bottom a:hover {
+    color: var(--about-white);
+}
+
+.about-footer-bottom {
+    width: min(1120px, 100%);
+    margin: 20px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    font-size: 9px;
+}
+
+.about-footer-bottom p {
+    margin: 0;
+}
+
+.about-footer-bottom div {
+    display: flex;
+    gap: 18px;
+}
+
+.about-footer-bottom a {
+    color: #a0a8a5;
+}
+
+/* Responsive layout */
+@media (max-width: 800px) {
+    .about-header {
+        padding-inline: 5%;
+    }
+
+    .about-logo {
+        font-size: 22px;
+    }
+
+    .about-navigation {
+        gap: 18px;
+    }
+
+    .about-navigation a {
+        font-size: 12px;
+    }
+
+    .about-intro {
+        gap: 5%;
+    }
+
+    .about-experience-copy {
+        padding-inline: 7%;
+    }
+
+    .about-stat-row {
+        gap: 16px;
+    }
+
+    .about-cta {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 600px) {
+    .about-header {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 12px;
+        padding-block: 15px;
+    }
+
+    .about-navigation {
+        width: 100%;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .about-hero {
+        min-height: 450px;
+    }
+
+    .about-hero-content {
+        width: 86%;
+        margin-left: 7%;
+        padding-block: 55px;
+    }
+
+    .about-hero-content h1 {
+        font-size: 42px;
+    }
+
+    .about-hero-content > p:not(.about-eyebrow) {
+        font-size: 12px;
+    }
+
+    .about-hero-caption {
+        font-size: 8px;
+    }
+
+    .about-intro {
+        grid-template-columns: 1fr;
+        gap: 25px;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .about-intro-heading h2 {
+        font-size: 46px;
+    }
+
+    .about-experience {
+        grid-template-columns: 1fr;
+    }
+
+    .about-experience-image-wrap,
+    .about-experience-image {
+        min-height: 270px;
+        height: 270px;
+    }
+
+    .about-experience-copy {
+        padding: 42px 7%;
+    }
+
+    .about-stat-row {
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .about-stat-row span {
+        font-size: 9px;
+    }
+
+    .about-purpose {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    .about-purpose-grid,
+    .about-values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-purpose-card {
+        min-height: auto;
+        padding: 27px;
+    }
+
+    .about-values {
+        padding: 60px 0;
+    }
+
+    .about-values-grid {
+        gap: 12px;
+    }
+
+    .about-value-card {
+        min-height: auto;
+    }
+
+    .about-cta {
+        padding: 42px 7%;
+    }
+
+    .about-cta-actions {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .about-footer-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 25px 18px;
+    }
+
+    .about-footer-column:last-child {
+        grid-column: 1 / -1;
+    }
+
+    .about-footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
