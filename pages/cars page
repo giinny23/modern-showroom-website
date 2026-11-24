@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cars | Modern Showroom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="about.css">
+</head>
+
+<body class="about-page">
+    <header class="about-header">
+        <a href="index.html" class="about-logo">Modern Showroom</a>
+        <nav class="about-navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="cars.html" class="active" aria-current="page">Cars</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <div class="carscards" id="carscards">
+        <h1 class="h1black" id="see-cars">Available Cars</h1>
+        <div class="car-list">
+            <div class="car-item">
+                <img src="images/Porsche 911 GT3.jpg" alt="Car 1">
+                <h3>Porsche 911 GT3</h3>
+                <!--Specs Grid-->
+                <div class="car-specs">
+                    <span>6.5L V12</span>
+                    <span>829 hp</span>
+                    <span>2.85s</span>
+                    <span>RWD</span>
+                    <span>340 km/h</span>
+                    <span>7-Spd DCT</span>
+                </div>
+                <button class="button button--card">View Car</button>
+            </div>
+            <div class="car-item">
+                <img src="images/BMW M4 GT3.jpg" alt="Car 2">
+                <h3>BMW M4 GT3</h3>
+                <!--Specs Grid-->
+                <div class="car-specs">
+                    <span>3.0L I6 TT</span>
+                    <span>590 hp</span>
+                    <span>3.1s</span>
+                    <span>RWD</span>
+                    <span>280 km/h</span>
+                    <span>6-Spd Seq</span>
+                </div>
+                <button class="button button--card">View Car</button>
+            </div>
+            <div class="car-item">
+                <img src="images/Ferrari Daytona SP3.jpg" alt="Car 3">
+                <h3>Ferrari Daytona SP3</h3>
+                <!--Specs Grid-->
+                <div class="car-specs">
+                    <span>4.0L Flat-6</span>
+                    <span>502 hp</span>
+                    <span>3.4s</span>
+                    <span>RWD</span>
+                    <span>318 km/h</span>
+                    <span>7-Spd PDK</span>
+                </div>
+                <button class="button button--card">View Car</button>
+            </div>
+
+            <div class="car-item">
+                <img src="images/Rolls-Royce Spectre.jpg" alt="Rolls-Royce Spectre">
+                <h3>Rolls-Royce Spectre</h3>
+                <!--Specs Grid-->
+                <div class="car-specs">
+                    <span>Dual Motor EV</span>
+                    <span>577 hp</span>
+                    <span>4.5s</span>
+                    <span>AWD</span>
+                    <span>250 km/h</span>
+                    <span>1-Spd Auto</span>
+                </div>
+                <button class="button button--card">View Car</button>
+            </div>
+            <div class="car-item">
+                <img src="images/Bentley Continental GT Speed.jpg" alt="Bentley Continental GT Speed">
+                <h3>Bentley Continental GT Speed</h3>
+                <!--Specs Grid-->
+                <div class="car-specs">
+                    <span>4.0L V8 PHEV</span>
+                    <span>771 hp</span>
+                    <span>3.2s</span>
+                    <span>AWD</span>
+                    <span>335 km/h</span>
+                    <span>8-Spd DCT</span>
+                </div>
+                <button class="button button--card">View Car</button>
+            </div>
+            <div class="car-item">
+                <img src="images/Aston Martin DBS 770 Ultimate.jpg" alt="Aston Martin DBS 770 Ultimate">
+                <h3>Aston Martin DBS 770 Ultimate</h3>
+                <!--Specs Grid-->
+                <div class="car-specs">
+                    <span>5.2L V12 TT</span>
+                    <span>759 hp</span>
+                    <span>3.4s</span>
+                    <span>RWD</span>
+                    <span>340 km/h</span>
+                    <span>8-Spd Auto</span>
+                </div>
+                <button class="button button--card">View Car</button>
+            </div>
+            <div class="car-item">
+                <img src="images/Mercedes-Maybach S680.jpg" alt="Mercedes-Maybach S680">
+                <h3>Mercedes-Maybach S680</h3>
+                <!--Specs Grid-->
+                <div class="car-specs">
+                    <span>6.0L V12 TT</span>
+                    <span>621 hp</span>
+                    <span>4.5s</span>
+                    <span>AWD</span>
+                    <span>250 km/h</span>
+                    <span>9-Spd Auto</span>
+                </div>
+                <button class="button button--card">View Car</button>
+            </div>
+            <div class="car-item">
+                <img src="images/Lamborghini Revuelto.jpg" alt="Lamborghini Revuelto">
+                <h3>Lamborghini Revuelto</h3>
+                <!--Specs Grid-->
+                <div class="car-specs">
+                    <span>6.5L V12 PHEV</span>
+                    <span>1,001 hp</span>
+                    <span>2.5s</span>
+                    <span>AWD</span>
+                    <span>350 km/h</span>
+                    <span>8-Spd DCT</span>
+                </div>
+                <button class="button button--card">View Car</button>
+            </div>
+            <div class="car-item">
+                <img src="images/Porsche 911 Turbo S.jpg" alt="Porsche 911 Turbo S">
+                <h3>Porsche 911 Turbo S</h3>
+                <!--Specs Grid-->
+                <div class="car-specs">
+                    <span>3.7L Flat-6 TT</span>
+                    <span>640 hp</span>
+                    <span>2.7s</span>
+                    <span>AWD</span>
+                    <span>330 km/h</span>
+                    <span>8-Spd PDK</span>
+                </div>
+                <button class="button button--card">View Car</button>
+            </div>
+            <div class="car-item">
+                <img src="images/Maserati MC20.jpg" alt="Maserati MC20">
+                <h3>Maserati MC20</h3>
+                <!--Specs Grid-->
+                <div class="car-specs">
+                    <span>3.0L V6 TT</span>
+                    <span>621 hp</span>
+                    <span>2.9s</span>
+                    <span>RWD</span>
+                    <span>325 km/h</span>
+                    <span>8-Spd DCT</span>
+                </div>
+                <button class="button button--card">View Car</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <footer class="about-footer">
+        <div class="about-footer-container">
+            <div class="about-footer-column">
+                <h2>Featured Cars</h2>
+                <ul>
+                    <li><a href="cars.html">Ferrari Daytona SP3</a></li>
+                    <li><a href="cars.html">Porsche 911 GT3</a></li>
+                    <li><a href="cars.html">BMW M4 GT3</a></li>
+                </ul>
+            </div>
+            <div class="about-footer-column">
+                <h2>Contact</h2>
+                <ul>
+                    <li><a href="mailto:modern.showroom@gmail.com">modern.showroom@gmail.com</a></li>
+                    <li><a href="tel:+20123456789">+20 12345 6789</a></li>
+                </ul>
+            </div>
+            <div class="about-footer-column">
+                <h2>Visit Us</h2>
+                <p>Al Abageyah, El Mokattam, Cairo Governorate 4411601</p>
+                <p>Sun – Thu: 9:00 AM – 7:00 PM</p>
+            </div>
+        </div>
+        <div class="about-footer-bottom">
+            <p>&copy; 2026 Modern Showroom. All rights reserved.</p>
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
