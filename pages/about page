@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Learn more about Modern Showroom and our approach to discovering exceptional cars.">
+    <title>About Us | Modern Showroom</title>
+    <link rel="stylesheet" href="about.css">
+</head>
+<body class="about-page">
+
+    <!-- Header: follows the same brand style used on the Home and Cars pages -->
+    <header class="about-header">
+        <a href="index.html" class="about-logo">Modern Showroom</a>
+        <nav class="about-navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="cars.html">Cars</a>
+            <a href="about.html" class="active" aria-current="page">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero section -->
+        <section class="about-hero">
+            <img
+                class="about-hero-image"
+                src="images/Car.jpg"
+                alt="Red Ferrari displayed in a dramatic outdoor setting"
+            >
+            <div class="about-hero-overlay"></div>
+            <div class="about-hero-content">
+                <p class="about-eyebrow">GET TO KNOW MODERN SHOWROOM</p>
+                <h1>Driven by passion.<br>Defined by choice.</h1>
+                <p>
+                    Discover a carefully presented collection of remarkable cars,
+                    with the details that help make your next choice easier.
+                </p>
+                <a class="about-button about-button-red" href="cars.html">Explore our cars</a>
+            </div>
+            <span class="about-hero-caption">MODERN SHOWROOM · CARS · EXPERIENCE</span>
+        </section>
+
+        <!-- Who we are -->
+        <section class="about-intro about-container">
+            <div class="about-intro-heading">
+                <p class="about-eyebrow">OUR SHOWROOM</p>
+                <h2>Who<br>we are.</h2>
+                <span class="about-heading-line"></span>
+            </div>
+            <div class="about-intro-copy">
+                <p class="about-lead">
+                    At Modern Showroom, every car has a story — and finding the
+                    right one should be an enjoyable experience.
+                </p>
+                <p>
+                    We bring a selection of distinctive vehicles together in one
+                    place, from performance-focused sports cars to refined luxury
+                    models. Our showroom website makes it easier to explore each
+                    vehicle through clear specifications, prices and images.
+                </p>
+                <p>
+                    Whether you are comparing models or simply discovering cars
+                    you admire, we aim to make your visit simple, informative and
+                    enjoyable.
+                </p>
+                <a class="about-text-link" href="cars.html">Discover the collection <span>↗</span></a>
+            </div>
+        </section>
+
+        <!-- Image and showroom approach -->
+        <section class="about-experience">
+            <div class="about-experience-image-wrap">
+                <img
+                    src="images/contact-car.png"
+                    alt="Black Porsche driving on the road"
+                    class="about-experience-image"
+                >
+                <span class="about-image-label">A CLOSER LOOK AT EVERY DETAIL</span>
+            </div>
+            <div class="about-experience-copy">
+                <p class="about-eyebrow">THE MODERN SHOWROOM APPROACH</p>
+                <h2>More than a list of cars.</h2>
+                <p>
+                    Choosing a vehicle starts with knowing what makes it special.
+                    That is why we bring together useful specifications, clear
+                    pricing and carefully selected images in one organized place.
+                </p>
+                <div class="about-stat-row">
+                    <div>
+                        <strong>01</strong>
+                        <span>Explore models</span>
+                    </div>
+                    <div>
+                        <strong>02</strong>
+                        <span>Compare details</span>
+                    </div>
+                    <div>
+                        <strong>03</strong>
+                        <span>Make your choice</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission and vision -->
+        <section class="about-purpose about-container">
+            <div class="about-section-heading">
+                <p class="about-eyebrow">WHAT GUIDES US</p>
+                <h2>Our purpose</h2>
+            </div>
+            <div class="about-purpose-grid">
+                <article class="about-purpose-card">
+                    <span class="about-card-number">01 / MISSION</span>
+                    <h3>Make discovery simple.</h3>
+                    <p>
+                        To present vehicle options in a clear and organized way,
+                        helping visitors explore models, understand key
+                        specifications and compare prices with ease.
+                    </p>
+                </article>
+                <article class="about-purpose-card about-purpose-card-dark">
+                    <span class="about-card-number">02 / VISION</span>
+                    <h3>A better showroom experience.</h3>
+                    <p>
+                        To create a welcoming digital space where a passion for
+                        cars meets thoughtful presentation, useful information
+                        and effortless browsing.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Why explore with us -->
+        <section class="about-values">
+            <div class="about-container">
+                <div class="about-section-heading about-values-heading">
+                    <p class="about-eyebrow">THE EXPERIENCE</p>
+                    <h2>Why explore with us?</h2>
+                    <p>Everything you need to take a closer look at your next car.</p>
+                </div>
+                <div class="about-values-grid">
+                    <article class="about-value-card">
+                        <span class="about-value-icon">◇</span>
+                        <h3>Distinctive Collection</h3>
+                        <p>Explore a range of luxury, sports and performance vehicles in one place.</p>
+                    </article>
+                    <article class="about-value-card">
+                        <span class="about-value-icon">⌕</span>
+                        <h3>Useful Details</h3>
+                        <p>Find key specifications and prices to help you compare different models.</p>
+                    </article>
+                    <article class="about-value-card">
+                        <span class="about-value-icon">✦</span>
+                        <h3>Easy Browsing</h3>
+                        <p>Enjoy an organized experience with vehicle images and information presented clearly.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to action -->
+        <section class="about-cta">
+            <div>
+                <p class="about-eyebrow">YOUR NEXT DRIVE STARTS HERE</p>
+                <h2>Find a car worth looking twice at.</h2>
+                <p>Explore the collection or contact us to learn more.</p>
+            </div>
+            <div class="about-cta-actions">
+                <a href="cars.html" class="about-button about-button-light">View available cars</a>
+                <a href="contact.html" class="about-cta-link">Contact us <span>→</span></a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer: uses the same showroom information as the existing pages -->
+    <footer class="about-footer">
+        <div class="about-footer-container">
+            <div class="about-footer-column">
+                <h2>Featured Cars</h2>
+                <ul>
+                    <li><a href="cars.html">Ferrari Daytona SP3</a></li>
+                    <li><a href="cars.html">Porsche 911 GT3</a></li>
+                    <li><a href="cars.html">BMW M4 GT3</a></li>
+                </ul>
+            </div>
+            <div class="about-footer-column">
+                <h2>Contact</h2>
+                <ul>
+                    <li><a href="mailto:modern.showroom@gmail.com">modern.showroom@gmail.com</a></li>
+                    <li><a href="tel:+20123456789">+20 12345 6789</a></li>
+                </ul>
+            </div>
+            <div class="about-footer-column">
+                <h2>Visit Us</h2>
+                <p>Al Abageyah, El Mokattam, Cairo Governorate 4411601</p>
+                <p>Sun – Thu: 9:00 AM – 7:00 PM</p>
+            </div>
+        </div>
+        <div class="about-footer-bottom">
+            <p>&copy; 2026 Modern Showroom. All rights reserved.</p>
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
