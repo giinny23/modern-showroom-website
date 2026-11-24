@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Showroom - Contact Us</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="about.css">
+</head>
+
+<body class="about-page">
+  <header class="about-header">
+        <a href="index.html" class="about-logo">Modern Showroom</a>
+        <nav class="about-navigation" aria-label="Main navigation">
+            <a href="index.html">Home</a>
+            <a href="cars.html">Cars</a>
+            <a href="about.html">About</a>
+            <a href="contact.html" class="active" aria-current="page">Contact</a>
+        </nav>
+    </header>
+  <main class="page-container">
+    <section class="hero-image-section">
+      <div class="image-wrapper">
+        <img src="images/contact-car.png" alt="Modern Showroom Luxury Sports Car" class="hero-car-img">
+      </div>
+    </section>
+
+    <section class="content-section">
+
+
+      <div class="form-container">
+        <div class="header-group">
+          <h1 class="main-title">CONTACT US</h1>
+          <p class="subtitle">Schedule a private viewing or inquire about our collection.</p>
+        </div>
+
+        <form class="contact-form" action="#" method="POST">
+          <div class="form-group">
+            <label for="fullName">Full Name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Your name" required autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="phoneNumber">Phone Number</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="+20 01..." autocomplete="tel">
+          </div>
+
+          <div class="form-group">
+            <label for="emailAddress">Email Address</label>
+            <input type="email" id="emailAddress" name="emailAddress" placeholder="example@..." required
+              autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="carModel">Car Model of Interest</label>
+            <input type="text" id="carModel" name="carModel" placeholder="e.g. Porsche 911 GT3, Ferrari Daytona SP3..."
+              list="carsList">
+            <datalist id="carsList">
+              <option value="Porsche 911 GT3">
+              <option value="BMW M4 GT3">
+              <option value="Ferrari Daytona SP3">
+              <option value="Rolls-Royce Spectre">
+              <option value="Bentley Continental GT Speed">
+              <option value="Aston Martin DBS 770 Ultimate">
+              <option value="Mercedes-Maybach S680">
+              <option value="Lamborghini Revuelto">
+              <option value="Porsche 911 Turbo S">
+              <option value="Maserati MC20">
+            </datalist>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="2" placeholder="Write your message..."></textarea>
+          </div>
+
+          <button type="submit" class="submit-btn">SEND INQUIRY</button>
+        </form>
+
+
+      </div>
+    </section>
+  </main>
+  <footer class="about-footer">
+        <div class="about-footer-container">
+            <div class="about-footer-column">
+                <h2>Featured Cars</h2>
+                <ul>
+                    <li><a href="cars.html">Ferrari Daytona SP3</a></li>
+                    <li><a href="cars.html">Porsche 911 GT3</a></li>
+                    <li><a href="cars.html">BMW M4 GT3</a></li>
+                </ul>
+            </div>
+            <div class="about-footer-column">
+                <h2>Contact</h2>
+                <ul>
+                    <li><a href="mailto:modern.showroom@gmail.com">modern.showroom@gmail.com</a></li>
+                    <li><a href="tel:+20123456789">+20 12345 6789</a></li>
+                </ul>
+            </div>
+            <div class="about-footer-column">
+                <h2>Visit Us</h2>
+                <p>Al Abageyah, El Mokattam, Cairo Governorate 4411601</p>
+                <p>Sun – Thu: 9:00 AM – 7:00 PM</p>
+            </div>
+        </div>
+        <div class="about-footer-bottom">
+            <p>&copy; 2026 Modern Showroom. All rights reserved.</p>
+            <div>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
